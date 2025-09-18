@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +49,14 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        aerospace: {
+          blue: "hsl(var(--aerospace-blue))",
+          "blue-light": "hsl(var(--aerospace-blue-light))",
+          "blue-dark": "hsl(var(--aerospace-blue-dark))",
+          orange: "hsl(var(--aerospace-orange))",
+          "orange-light": "hsl(var(--aerospace-orange-light))",
+          "orange-dark": "hsl(var(--aerospace-orange-dark))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
