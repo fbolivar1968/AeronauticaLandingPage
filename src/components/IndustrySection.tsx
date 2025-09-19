@@ -8,7 +8,9 @@ import {
   Users,
   Wrench,
   GraduationCap,
-  Building
+  Building,
+  Globe,
+  Award
 } from "lucide-react";
 
 const IndustrySection = () => {
@@ -130,6 +132,96 @@ const IndustrySection = () => {
             </div>
           </CardContent>
         </Card>
+
+        {/* Authorities that Recognize AS9100 */}
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-aerospace-blue mb-6">
+              Autoridades que Reconocen AS9100
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Las principales autoridades aeronáuticas mundiales que reconocen y requieren AS9100
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <Card className="gradient-card shadow-card hover:shadow-aerospace transition-smooth">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <Plane className="w-8 h-8 text-aerospace-orange mr-3" />
+                  <h3 className="text-2xl font-semibold text-aerospace-blue">FAA</h3>
+                </div>
+                <p className="text-lg font-medium text-aerospace-blue mb-2">Federal Aviation Administration</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Es la autoridad nacional de aviación de los Estados Unidos, encargada de la regulación 
+                  y supervisión de todos los aspectos de la aviación civil en EE.UU. La FAA regula la 
+                  seguridad aérea, la certificación de personal y aeronaves, la construcción y operación 
+                  de aeropuertos, y la gestión del espacio aéreo nacional.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="gradient-card shadow-card hover:shadow-aerospace transition-smooth">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <Globe className="w-8 h-8 text-aerospace-orange mr-3" />
+                  <h3 className="text-2xl font-semibold text-aerospace-blue">EASA</h3>
+                </div>
+                <p className="text-lg font-medium text-aerospace-blue mb-2">European Union Aviation Safety Agency</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Es la agencia de la Unión Europea que se encarga de la seguridad y regulación de la 
+                  aviación civil en Europa. EASA desarrolla normas comunes de aviación civil, certifica 
+                  aeronaves y componentes, y aprueba organizaciones involucradas en el diseño, 
+                  fabricación y mantenimiento de productos aeronáuticos.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Types of Auditors */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-aerospace-blue mb-6">
+              Tipos de Auditores AS9100
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Clasificación de auditores especializados en la norma AS9100
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="gradient-card shadow-card hover:shadow-aerospace transition-smooth">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <Users className="w-8 h-8 text-aerospace-orange mr-3" />
+                  <h3 className="text-2xl font-semibold text-aerospace-blue">AA (Aerospace Auditor)</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Auditor Aeroespacial especializado en la norma AS9100. Estos auditores tienen formación 
+                  específica en los requisitos únicos de la industria aeroespacial, incluyendo gestión 
+                  de configuración, control de partes falsificadas, requisitos especiales del cliente, 
+                  y elementos críticos. Están calificados para realizar auditorías de certificación 
+                  y seguimiento en organizaciones del sector aeroespacial.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="gradient-card shadow-card hover:shadow-aerospace transition-smooth">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <Award className="w-8 h-8 text-aerospace-orange mr-3" />
+                  <h3 className="text-2xl font-semibold text-aerospace-blue">AEA (Aerospace Expert Auditor)</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Auditor Experto Aeroespacial con mayor nivel de especialización y experiencia en AS9100. 
+                  Los AEA tienen conocimientos avanzados en procesos aeroespaciales complejos, pueden liderar 
+                  equipos de auditoría, manejar organizaciones de mayor complejidad, y están autorizados 
+                  para auditar aspectos técnicos más especializados como diseño aeroespacial, procesos 
+                  especiales críticos, y sistemas de gestión integrados.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </section>
   );
