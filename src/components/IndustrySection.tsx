@@ -1,46 +1,81 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Plane, 
-  Rocket, 
-  Shield, 
-  Radar,
-  Users,
-  Wrench,
-  GraduationCap,
-  Building,
-  Globe,
-  Award
-} from "lucide-react";
-
+import { Plane, Rocket, Shield, Radar, Users, Wrench, GraduationCap, Building, Globe, Award } from "lucide-react";
 const IndustrySection = () => {
-  const civilSegments = [
-    { icon: Plane, title: "Aviación Comercial", description: "Aerolíneas de transporte de pasajeros y carga internacional (Boeing 737/787, Airbus A320/A350)" },
-    { icon: Plane, title: "Aviación Regional", description: "Aviones pequeños para distancias cortas (ATR-72, Bombardier CRJ, Embraer E2)" },
-    { icon: Users, title: "Aviación General", description: "Uso privado, taxis aéreos, escuelas de vuelo (Cessna 172, Cirrus SR22)" },
-    { icon: Wrench, title: "MRO", description: "Mantenimiento, reparación y overhaul (Lufthansa Technik, Aeroman)" },
-    { icon: GraduationCap, title: "Simuladores", description: "Entrenamiento de pilotos y tripulaciones (CAE, FlightSafety International)" },
-    { icon: Building, title: "Infraestructura", description: "Aeropuertos, sistemas de navegación, ATC (SITA, Thales Group)" }
-  ];
-
-  const defenseSegments = [
-    { icon: Shield, title: "Defensa", description: "Aeronaves militares convencionales (F-35 Lightning II, C-130 Hercules)" },
-    { icon: Radar, title: "ISR", description: "Inteligencia, vigilancia y reconocimiento (RQ-4 Global Hawk, P-8 Poseidon)" },
-    { icon: Shield, title: "Combate", description: "Aviones de combate y entrenamiento militar (F-16, Eurofighter Typhoon)" },
-    { icon: Plane, title: "Ala Rotatoria", description: "Helicópteros de transporte, ataque y rescate (UH-60 Black Hawk, AH-64 Apache)" },
-    { icon: Radar, title: "UAS", description: "Sistemas aéreos no tripulados militares (MQ-9 Reaper, Bayraktar TB2)" },
-    { icon: Shield, title: "Uso Dual", description: "Aeronaves con aplicaciones civiles y militares (Boeing C-17)" }
-  ];
-
-  const spaceSegments = [
-    { icon: Rocket, title: "Lanzadores", description: "Vehículos de lanzamiento de satélites (Falcon 9, Ariane 5)" },
-    { icon: Radar, title: "Satélites", description: "Comunicaciones, meteorología, defensa (Starlink, Hubble, ISS)" },
-    { icon: Users, title: "Vehículos Tripulados", description: "Cápsulas para transporte humano (Crew Dragon, Orion)" },
-    { icon: Building, title: "Infraestructura", description: "Segmento terrestre: estaciones de control, antenas, radares" }
-  ];
-
-  const SegmentCard = ({ segment, color }: { segment: typeof civilSegments[0], color: string }) => (
-    <Card className="gradient-card shadow-card hover:shadow-aerospace transition-smooth group h-full">
+  const civilSegments = [{
+    icon: Plane,
+    title: "Aviación Comercial",
+    description: "Aerolíneas de transporte de pasajeros y carga internacional (Boeing 737/787, Airbus A320/A350)"
+  }, {
+    icon: Plane,
+    title: "Aviación Regional",
+    description: "Aviones pequeños para distancias cortas (ATR-72, Bombardier CRJ, Embraer E2)"
+  }, {
+    icon: Users,
+    title: "Aviación General",
+    description: "Uso privado, taxis aéreos, escuelas de vuelo (Cessna 172, Cirrus SR22)"
+  }, {
+    icon: Wrench,
+    title: "MRO",
+    description: "Mantenimiento, reparación y overhaul (Lufthansa Technik, Aeroman)"
+  }, {
+    icon: GraduationCap,
+    title: "Simuladores",
+    description: "Entrenamiento de pilotos y tripulaciones (CAE, FlightSafety International)"
+  }, {
+    icon: Building,
+    title: "Infraestructura",
+    description: "Aeropuertos, sistemas de navegación, ATC (SITA, Thales Group)"
+  }];
+  const defenseSegments = [{
+    icon: Shield,
+    title: "Defensa",
+    description: "Aeronaves militares convencionales (F-35 Lightning II, C-130 Hercules)"
+  }, {
+    icon: Radar,
+    title: "ISR",
+    description: "Inteligencia, vigilancia y reconocimiento (RQ-4 Global Hawk, P-8 Poseidon)"
+  }, {
+    icon: Shield,
+    title: "Combate",
+    description: "Aviones de combate y entrenamiento militar (F-16, Eurofighter Typhoon)"
+  }, {
+    icon: Plane,
+    title: "Ala Rotatoria",
+    description: "Helicópteros de transporte, ataque y rescate (UH-60 Black Hawk, AH-64 Apache)"
+  }, {
+    icon: Radar,
+    title: "UAS",
+    description: "Sistemas aéreos no tripulados militares (MQ-9 Reaper, Bayraktar TB2)"
+  }, {
+    icon: Shield,
+    title: "Uso Dual",
+    description: "Aeronaves con aplicaciones civiles y militares (Boeing C-17)"
+  }];
+  const spaceSegments = [{
+    icon: Rocket,
+    title: "Lanzadores",
+    description: "Vehículos de lanzamiento de satélites (Falcon 9, Ariane 5)"
+  }, {
+    icon: Radar,
+    title: "Satélites",
+    description: "Comunicaciones, meteorología, defensa (Starlink, Hubble, ISS)"
+  }, {
+    icon: Users,
+    title: "Vehículos Tripulados",
+    description: "Cápsulas para transporte humano (Crew Dragon, Orion)"
+  }, {
+    icon: Building,
+    title: "Infraestructura",
+    description: "Segmento terrestre: estaciones de control, antenas, radares"
+  }];
+  const SegmentCard = ({
+    segment,
+    color
+  }: {
+    segment: typeof civilSegments[0];
+    color: string;
+  }) => <Card className="gradient-card shadow-card hover:shadow-aerospace transition-smooth group h-full">
       <CardContent className="p-6">
         <div className="flex items-start mb-4">
           <segment.icon className={`w-8 h-8 ${color} mr-3 mt-1 group-hover:scale-110 transition-smooth`} />
@@ -50,11 +85,8 @@ const IndustrySection = () => {
           </div>
         </div>
       </CardContent>
-    </Card>
-  );
-
-  return (
-    <section className="py-20">
+    </Card>;
+  return <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-aerospace-blue border-aerospace-blue">
@@ -63,10 +95,7 @@ const IndustrySection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-aerospace-blue mb-6">
             Industria Aeronáutica, Espacial y Defensa
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            La norma AS9100D es reconocida y requerida por organizaciones globales como 
-            FAA (Federal Aviation Administration) y EASA (European Aviation Safety Agency)
-          </p>
+          
         </div>
 
         {/* Civil Sector */}
@@ -76,9 +105,7 @@ const IndustrySection = () => {
             <h3 className="text-3xl font-bold text-aerospace-blue">Sector Civil / Comercial</h3>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {civilSegments.map((segment, index) => (
-              <SegmentCard key={index} segment={segment} color="text-aerospace-blue" />
-            ))}
+            {civilSegments.map((segment, index) => <SegmentCard key={index} segment={segment} color="text-aerospace-blue" />)}
           </div>
         </div>
 
@@ -89,9 +116,7 @@ const IndustrySection = () => {
             <h3 className="text-3xl font-bold text-aerospace-blue">Sector Defensa / Militar</h3>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {defenseSegments.map((segment, index) => (
-              <SegmentCard key={index} segment={segment} color="text-aerospace-orange" />
-            ))}
+            {defenseSegments.map((segment, index) => <SegmentCard key={index} segment={segment} color="text-aerospace-orange" />)}
           </div>
         </div>
 
@@ -102,9 +127,7 @@ const IndustrySection = () => {
             <h3 className="text-3xl font-bold text-aerospace-blue">Sector Espacial</h3>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {spaceSegments.map((segment, index) => (
-              <SegmentCard key={index} segment={segment} color="text-aerospace-blue" />
-            ))}
+            {spaceSegments.map((segment, index) => <SegmentCard key={index} segment={segment} color="text-aerospace-blue" />)}
           </div>
         </div>
 
@@ -223,8 +246,6 @@ const IndustrySection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default IndustrySection;

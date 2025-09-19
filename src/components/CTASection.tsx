@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Plane, Star, Rocket } from "lucide-react";
-
 const CTASection = () => {
-  return (
-    <section className="py-20 gradient-hero">
+  return <section className="py-20 gradient-hero">
       <div className="max-w-4xl mx-auto px-6 text-center text-white">
         {/* Floating Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -26,9 +24,7 @@ const CTASection = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl mb-10 leading-relaxed opacity-90 max-w-3xl mx-auto">
-            Descarga la guía completa de AS9100D y prepárate para el futuro de la industria aeronáutica
-          </p>
+          
 
           {/* Benefits List */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -58,13 +54,9 @@ const CTASection = () => {
           </div>
 
           {/* Additional Info */}
-          <p className="text-sm opacity-75 mt-6">
-            Información completa sobre certificación, requisitos y beneficios
-          </p>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
