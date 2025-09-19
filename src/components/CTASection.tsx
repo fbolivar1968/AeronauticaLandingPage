@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Download, Plane, Star, Rocket } from "lucide-react";
+import { Plane, Star, Rocket } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -57,15 +56,6 @@ const CTASection = () => {
               </CardContent>
             </Card>
           </div>
-
-          {/* CTA Button */}
-          <Button 
-            size="lg"
-            className="bg-aerospace-orange hover:bg-aerospace-orange-dark text-white px-12 py-6 text-xl font-bold transition-smooth shadow-aerospace hover:shadow-xl transform hover:-translate-y-2 hover:scale-105"
-          >
-            <Download className="w-6 h-6 mr-3" />
-            Descarga la guía completa AS9100D
-          </Button>
 
           {/* Additional Info */}
           <p className="text-sm opacity-75 mt-6">

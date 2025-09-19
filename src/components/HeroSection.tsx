@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Download, Plane, Shield, Star } from "lucide-react";
+import { Plane, Shield, Star } from "lucide-react";
 import heroImage from "@/assets/hero-aerospace-manufacturing.jpg";
 
 const HeroSection = () => {
@@ -48,14 +47,7 @@ const HeroSection = () => {
           </div>
         </div>
         
-        {/* CTA Button */}
-        <Button 
-          size="lg" 
-          className="bg-aerospace-orange hover:bg-aerospace-orange-dark text-white px-8 py-4 text-lg font-semibold transition-smooth shadow-aerospace hover:shadow-xl transform hover:-translate-y-1"
-        >
-          <Download className="w-5 h-5 mr-2" />
-          Descarga la guía completa
-        </Button>
+        {/* Hero text and buttons removed */}
       </div>
       
       {/* Scroll Indicator */}
