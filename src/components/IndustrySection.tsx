@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Plane, Rocket, Shield, Radar, Users, Wrench, GraduationCap, Building, Globe, Award } from "lucide-react";
+import civilAviationImage from "@/assets/civil-aviation.jpg";
+import defenseAviationImage from "@/assets/defense-aviation.jpg";
+import spaceAerospaceImage from "@/assets/space-aerospace.jpg";
 const IndustrySection = () => {
   const civilSegments = [{
     icon: Plane,
@@ -100,9 +103,20 @@ const IndustrySection = () => {
 
         {/* Civil Sector */}
         <div className="mb-16">
-          <div className="flex items-center mb-8">
-            <Plane className="w-10 h-10 text-aerospace-blue mr-4" />
-            <h3 className="text-3xl font-bold text-aerospace-blue">Sector Civil / Comercial</h3>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 mb-8">
+            <div className="lg:w-1/2">
+              <div className="flex items-center mb-4">
+                <Plane className="w-10 h-10 text-aerospace-blue mr-4" />
+                <h3 className="text-3xl font-bold text-aerospace-blue">Sector Civil / Comercial</h3>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <img 
+                src={civilAviationImage} 
+                alt="Airbus A320 - Aviación Civil y Comercial" 
+                className="rounded-lg shadow-aerospace w-full h-48 object-cover"
+              />
+            </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {civilSegments.map((segment, index) => <SegmentCard key={index} segment={segment} color="text-aerospace-blue" />)}
@@ -111,9 +125,20 @@ const IndustrySection = () => {
 
         {/* Defense Sector */}
         <div className="mb-16">
-          <div className="flex items-center mb-8">
-            <Shield className="w-10 h-10 text-aerospace-orange mr-4" />
-            <h3 className="text-3xl font-bold text-aerospace-blue">Sector Defensa / Militar</h3>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 mb-8">
+            <div className="lg:w-1/2">
+              <div className="flex items-center mb-4">
+                <Shield className="w-10 h-10 text-aerospace-orange mr-4" />
+                <h3 className="text-3xl font-bold text-aerospace-blue">Sector Defensa / Militar</h3>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <img 
+                src={defenseAviationImage} 
+                alt="F-35 Lightning II - Sector Defensa y Militar" 
+                className="rounded-lg shadow-aerospace w-full h-48 object-cover"
+              />
+            </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {defenseSegments.map((segment, index) => <SegmentCard key={index} segment={segment} color="text-aerospace-orange" />)}
@@ -122,9 +147,20 @@ const IndustrySection = () => {
 
         {/* Space Sector */}
         <div className="mb-16">
-          <div className="flex items-center mb-8">
-            <Rocket className="w-10 h-10 text-aerospace-blue mr-4" />
-            <h3 className="text-3xl font-bold text-aerospace-blue">Sector Espacial</h3>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 mb-8">
+            <div className="lg:w-1/2">
+              <div className="flex items-center mb-4">
+                <Rocket className="w-10 h-10 text-aerospace-blue mr-4" />
+                <h3 className="text-3xl font-bold text-aerospace-blue">Sector Espacial</h3>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <img 
+                src={spaceAerospaceImage} 
+                alt="Falcon 9 SpaceX - Sector Espacial" 
+                className="rounded-lg shadow-aerospace w-full h-48 object-cover"
+              />
+            </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             {spaceSegments.map((segment, index) => <SegmentCard key={index} segment={segment} color="text-aerospace-blue" />)}
