@@ -46,7 +46,7 @@ const HeroSection = () => {
                     <div
                         className="inline-flex items-center px-4 py-2 bg-aerospace-orange rounded-full text-sm font-medium mb-6 shadow-card">
                         <Star className="w-4 h-4 mr-2"/>
-                        Certificación AS9100D en Proceso
+                        Certificados en norma AS9100D
                     </div>
 
                     {/* Main Title */}

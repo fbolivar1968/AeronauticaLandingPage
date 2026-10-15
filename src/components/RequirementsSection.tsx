@@ -188,7 +188,7 @@ const RequirementsSection = () => {
                 <div className="border-l-4 border-aerospace-orange pl-6">
                   <h3 className="text-2xl font-bold text-aerospace-blue mb-2">En Colombia:</h3>
                   <p className="text-muted-foreground mb-4">
-                    Actualmente en Colombia hay 11 empresas certificadas en AS9100
+                    Actualmente en Colombia hay 12 empresas certificadas en AS9100
                   </p>
                   
                   <div className="bg-aerospace-blue/10 rounded-lg p-6 mb-6">
@@ -204,7 +204,7 @@ const RequirementsSection = () => {
                       <div className="bg-white p-2 rounded text-center">PALCORT TECH</div>
                       <div className="bg-white p-2 rounded text-center">RUTECH</div>
                       <div className="bg-white p-2 rounded text-center">TRIMCO</div>
-                      <div className="bg-white p-2 rounded text-center text-aerospace-orange font-semibold">+1 más</div>
+                      <div className="bg-white p-2 rounded text-center text-aerospace-orange font-semibold">+2 más</div>
                     </div>
                   </div>
                 </div>

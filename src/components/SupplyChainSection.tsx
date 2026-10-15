@@ -9,6 +9,7 @@ import {
   ArrowDown,
   Building2
 } from "lucide-react";
+import { Button } from "./ui/button";
 
 const SupplyChainSection = () => {
   const tierLevels = [
@@ -46,7 +47,7 @@ const SupplyChainSection = () => {
       subtitle: "Piezas Básicas",
       description: "Piezas básicas y tratamientos",
       examples: "Mecanizado, tratamientos superficiales, recubrimientos",
-      color: "bg-muted text-aerospace-blue",
+      color: "bg-muted border-2 border-aerospace-blue text-aerospace-blue",
       position: "fourth"
     },
     {
@@ -100,6 +101,81 @@ const SupplyChainSection = () => {
       term: "Traceability",
       full: "Trazabilidad",
       description: "Trazabilidad completa de cada pieza y material"
+    },
+    {
+      term: "DOA",
+      full: "Design Organization Approval",
+      description: "Reconocimiento de Organizaciones de Diseño"
+    },
+    {
+      term: "POA",
+      full: "Production Organization Approval",
+      description: "Reconocimiento de Organizaciones de Producción"
+    },
+    {
+      term: "CDPA",
+      full: "Certificado de Diseño de Producto Aeronáutico",
+      description: "Certificado de Diseño de Producto Aeronáutico"
+    },
+    {
+      term: "CPAAE",
+      full: "Certificado de Producción Aeronáutica Aviación de Estado",
+      description: "Certificado de Producción Aeronáutica Aviación de Estado"
+    },
+    {
+      term: "IAC",
+      full: "Industria Aeronáutica Colombiana",
+      description: "Industria Aeronáutica Colombiana"
+    },
+    {
+      term: "PAEP",
+      full: "Procedimiento Aprobado de Ensayos de Producción",
+      description: "Procedimiento Aprobado de Ensayos de Producción"
+    },
+    {
+      term: "PCA:",
+      full: "Personal Certificador Autorizado",
+      description: "Personal Certificador Autorizado"
+    },
+    {
+      term: "PCPA",
+      full: "Plan de Certificación de Producto Aeronáutico",
+      description: "Plan de Certificación de Producto Aeronáutico"
+    },
+    {
+      term: "PIC",
+      full: "Procedimientos de Inspección de Conformidad",
+      description: "Procedimientos de Inspección de Conformidad"
+    },
+    {
+      term: "RPAS:",
+      full: "Remotely Piloted Aerial System (Sistema Aéreo Piloteado Remotamente)",
+      description: "Sistema Aéreo Piloteado Remotamente"
+    },
+    {
+      term: "RPC",
+      full: "Reconocimiento de Personal de Certificación",
+      description: "Reconocimiento de Personal de Certificación"
+    },
+    {
+      term: "SGCO",
+      full: "Sistema de Gestión de Calidad de la Organización",
+      description: "Sistema de Gestión de Calidad de la Organización"
+    },
+    {
+      term: "UAS",
+      full: "Unmanned Aerial System (Sistema Aéreo No Tripulado)",
+      description: "Sistema Aéreo No Tripulado"
+    },
+    {
+      term: "Aeronavegable",
+      full: "Va instalada en la aeronave. Si falla, compromete la seguridad del vuelo",
+      description: "Va instalada en la aeronave. Si falla, compromete la seguridad del vuelo"
+    },
+    {
+      term: "No Aeronavegable",
+      full: "Soporta la operación en tierra. No vuela con la aeronave",
+      description: "Soporta la operación en tierra. No vuela con la aeronave"
     }
   ];
 
@@ -198,6 +274,13 @@ const SupplyChainSection = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            <Button
+              onClick={() => window.open("https://forjasbolivar.sharepoint.com/:f:/s/POSEIDON/IgBfwkK7p27RTYYcIT6KPIY0AZ1uLokOlBYKcvIfA2PcA0Y?e=g1EcoS", "_blank")} 
+              className="link animate-pulse">
+              Conoce más en la biblioteca de conocimiento
+            </Button>
           </div>
         </div>
       </div>

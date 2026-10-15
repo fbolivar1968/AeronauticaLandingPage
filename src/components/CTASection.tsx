@@ -14,7 +14,7 @@ const CTASection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-6 py-2 bg-aerospace-orange rounded-full text-sm font-semibold mb-8 shadow-aerospace">
             <Star className="w-4 h-4 mr-2" />
-            Próximo Paso Hacia la Certificación
+            Certificados en norma AS9100D
           </div>
 
           {/* Main Title */}

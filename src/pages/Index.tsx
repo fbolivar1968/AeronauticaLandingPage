@@ -3,6 +3,7 @@ import InfoSection from "@/components/InfoSection";
 import IndustrySection from "@/components/IndustrySection";
 import RequirementsSection from "@/components/RequirementsSection";
 import SupplyChainSection from "@/components/SupplyChainSection";
+import AirworthinessSection from "@/components/AirworthinessSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 
@@ -14,6 +15,7 @@ const Index = () => {
       <IndustrySection />
       <RequirementsSection />
       <SupplyChainSection />
+      <AirworthinessSection />
       <FAQSection />
       <CTASection />
     </main>

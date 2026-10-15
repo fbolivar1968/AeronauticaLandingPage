@@ -57,7 +57,7 @@ const InfoSection = () => {
             />
             <CardContent className="p-10 text-center">
               <Award className="w-16 h-16 text-aerospace-orange mx-auto mb-6" />
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">Forjas Bolívar se va a certificar en la norma AS9100D</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">Forjas Bolívar está certificado en la norma AS9100D</h3>
               <p className="text-xl leading-relaxed max-w-4xl mx-auto">
                 Con el alcance de <strong>"manufactura de productos para el sector aeronáutico 
                 en los procesos de forjado, mecanizado y tratamientos térmicos de aleaciones 

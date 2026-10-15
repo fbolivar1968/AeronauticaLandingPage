@@ -40,7 +40,7 @@ const FAQSection = () => {
       answer: "El personal necesita capacitación en: fundamentos de AS9100D y diferencias con ISO 9001, gestión de riesgos específicos aeroespaciales, requisitos especiales del cliente, auditorías internas específicas AS9100, prevención de partes falsificadas, y uso de herramientas de calidad aeroespacial (AS9102, AS9103, AS9104)."
     },
     {
-      question: "¿Cómo mantener la certificación una vez obtenida?",
+      question: "¿Cómo mantener la certificación?",
       answer: "Para mantener AS9100D se requiere: auditorías de seguimiento anuales, auditoría de recertificación cada 3 años, mejora continua demostrable, actualización ante cambios normativos, gestión efectiva de no conformidades, y mantener el desempeño en métricas clave como OTD, calidad y satisfacción del cliente."
     }
   ];
