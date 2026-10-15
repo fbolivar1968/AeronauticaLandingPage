@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Plane, Rocket, Shield, Radar, Users, Wrench, GraduationCap, Building, Globe, Award } from "lucide-react";
 import civilAviationImage from "@/assets/civil-aviation.jpg";
+
 import defenseAviationImage from "@/assets/defense-aviation.jpg";
 import spaceAerospaceImage from "@/assets/space-aerospace.jpg";
 const IndustrySection = () => {
@@ -184,8 +185,8 @@ const IndustrySection = () => {
                 <h4 className="text-xl font-semibold mb-2">TUVNORD</h4>
                 <p className="text-sm opacity-90">Certificación internacional</p>
               </div>
-              <div>
-                <h4 className="text-xl font-semibold mb-2">AMTIVO</h4>
+              <div className= "shadow-md border-aerospace-blue border-2 shadow-aerospace-orange-dark}">
+                <h4 className="text-xl font-semibold mb-2 ">AMTIVO</h4>
                 <p className="text-sm opacity-90">Entidad acreditada</p>
               </div>
             </div>

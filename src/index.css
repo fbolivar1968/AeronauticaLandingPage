@@ -45,8 +45,11 @@ All colors MUST be HSL.
     --aerospace-orange: 31 100% 50%;
     --aerospace-orange-light: 31 85% 65%;
     --aerospace-orange-dark: 31 100% 40%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(var(--aerospace-blue)), hsl(var(--aerospace-blue-light)));
+
+    --gradient-hero: linear-gradient(135deg,
+    hsla(var(--aerospace-blue)),
+    hsla(var(--aerospace-blue-light))
+    );
     --gradient-accent: linear-gradient(90deg, hsl(var(--aerospace-orange)), hsl(var(--aerospace-orange-light)));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 15% 98%));
     

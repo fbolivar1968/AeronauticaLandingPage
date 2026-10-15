@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ForjadoImg from "@/assets/ForjadoImg.jpg"
 import { Globe, Building2, CheckCircle, TrendingUp, Users, Award, Plane, Shield, Cog } from "lucide-react";
+import civilAviationImage from "@/assets/civil-aviation.jpg";
 const InfoSection = () => {
   return <section className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
@@ -48,6 +50,11 @@ const InfoSection = () => {
           
           {/* Company Certification Highlight */}
           <Card className="bg-aerospace-blue text-white shadow-aerospace">
+            <img
+                src={ForjadoImg}
+                alt="Estampación - Forjas Bolívar"
+                className="rounded-lg shadow-aerospace w-full h-48 object-cover"
+            />
             <CardContent className="p-10 text-center">
               <Award className="w-16 h-16 text-aerospace-orange mx-auto mb-6" />
               <h3 className="text-3xl md:text-4xl font-bold mb-4">Forjas Bolívar se va a certificar en la norma AS9100D</h3>

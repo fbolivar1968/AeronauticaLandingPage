@@ -31,24 +31,24 @@ const CTASection = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-smooth">
               <CardContent className="p-6 text-center">
                 <Plane className="w-12 h-12 text-aerospace-orange mx-auto mb-4" />
-                <h4 className="text-lg font-semibold mb-2">Acceso Global</h4>
-                <p className="text-sm opacity-90">Contratos internacionales OEM</p>
+                <h4 className="text-lg font-semibold text-white mb-2">Acceso Global</h4>
+                <p className="text-sm text-white opacity-90">Contratos internacionales OEM</p>
               </CardContent>
             </Card>
             
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-smooth">
               <CardContent className="p-6 text-center">
                 <Star className="w-12 h-12 text-aerospace-orange mx-auto mb-4" />
-                <h4 className="text-lg font-semibold mb-2">Competitividad</h4>
-                <p className="text-sm opacity-90">Ventaja sobre no certificados</p>
+                <h4 className="text-lg font-semibold text-white mb-2">Competitividad</h4>
+                <p className="text-sm text-white opacity-90">Ventaja sobre no certificados</p>
               </CardContent>
             </Card>
             
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-smooth">
               <CardContent className="p-6 text-center">
                 <Rocket className="w-12 h-12 text-aerospace-orange mx-auto mb-4" />
-                <h4 className="text-lg font-semibold mb-2">Escalamiento</h4>
-                <p className="text-sm opacity-90">De Tier 3 a Tier 2</p>
+                <h4 className="text-lg text-white font-semibold mb-2">Escalamiento</h4>
+                <p className="text-sm text-white opacity-90">De Tier 3 a Tier 2</p>
               </CardContent>
             </Card>
           </div>

@@ -47,11 +47,11 @@ const RequirementsSection = () => {
   const standards = [{
     code: "AS9100",
     description: "Diseño y manufactura",
-    color: "text-aerospace-blue"
+    color: "text-aerospace-orange"
   }, {
     code: "AS9110",
     description: "Mantenimiento",
-    color: "text-aerospace-orange"
+    color: "text-aerospace-blue"
   }, {
     code: "AS9120",
     description: "Distribuidores de partes",
@@ -199,7 +199,7 @@ const RequirementsSection = () => {
                       <div className="bg-white p-2 rounded text-center">DMARCO</div>
                       <div className="bg-white p-2 rounded text-center">FLY LOGISTIC</div>
                       <div className="bg-white p-2 rounded text-center">Indaer</div>
-                      <div className="bg-white p-2 rounded text-center">Induimil</div>
+                      <div className="bg-white p-2 rounded text-center">Indumil</div>
                       <div className="bg-white p-2 rounded text-center">NEDIAR</div>
                       <div className="bg-white p-2 rounded text-center">PALCORT TECH</div>
                       <div className="bg-white p-2 rounded text-center">RUTECH</div>
